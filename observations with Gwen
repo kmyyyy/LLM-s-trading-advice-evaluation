@@ -6,7 +6,7 @@ In this test it did not: it declined or gave no usable answer. With prompts v1 a
 In one attempt it spent about 10 minutes alternating between "I cannot" and "but I could" before gave an answer. 
 This was used for this model only, so its picks are not strictly comparable to the other models' and are marked as such in the table. 
 It is also a much smaller model than the hosted chatbots, so differences in behavior may reflect model size and not only the model family.
-The raw outputs, including the reasoning the model displayed, are below.  
+The raw outputs, including the reasoning the model are below.  
 This is a single model, a few prompts and a handful of attempts, so I will not draw a general conclusion from it.
 
 
