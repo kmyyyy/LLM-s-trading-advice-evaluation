@@ -1,0 +1,27 @@
+commend to trigger results 
+SELECT b.Model,
+       ROUND(AVG(w.Result), 2) AS avg_result
+FROM ai_bets b
+JOIN week_1 w ON w.Name = b.Ticker
+GROUP BY b.Model
+ORDER BY avg_result DESC;
+
+Conclusion:
+ Picks:
+  Sonnet 5.5
+  NVDA, AMD, TSLA, AVGO, NFLX 
+  
+  Gpt-Luna 6
+  GOOGL, MSFT, AMZN, NVDA, AMD
+  
+  Gemini 3
+  NVDA, MSFT, AAPL, AMZN, META
+  
+  Gwen 3. 4:5b
+  NVDA, AMD, TSLA, META, MSFT
+  
+ Results:
+  Sonnet 5.5   -2.39
+  Gwen 3. 4:5b	-2.53
+  Gemini 3	    -2.61
+  Gpt-Luna 6	  -5.49
